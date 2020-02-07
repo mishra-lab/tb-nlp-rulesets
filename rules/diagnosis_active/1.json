@@ -1,0 +1,138 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "active"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ih7uco"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "no indication",
+                            "OR",
+                            "no evidence",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "no history",
+                            "OR",
+                            "no prior",
+                            "OR",
+                            "no symptoms",
+                            "OR",
+                            "no personal history"
+                        ],
+                        "Score": 3,
+                        "Modifier": "b",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "7i36d"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "active"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "j8ktyo"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "denies"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "lbqzi"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "tuberculosis",
+                    "OR",
+                    "\\bTB\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "rrc0dh"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "no prior",
+                            "OR",
+                            "no history",
+                            "OR",
+                            "no evidence",
+                            "OR",
+                            "no symptoms",
+                            "OR",
+                            "no personal history"
+                        ],
+                        "Score": 3,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "afcifq"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "latent"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "m7ou0e"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "tuberculosis",
+                            "OR",
+                            "\\bTB\\b"
+                        ],
+                        "Score": 1,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "ft1pr5"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

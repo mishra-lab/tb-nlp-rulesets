@@ -1,0 +1,123 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "non-tuberculosis",
+                    "OR",
+                    "\\bnon tuberculosis\\b",
+                    "OR",
+                    "nontuberculous",
+                    "OR",
+                    "non-tuberculous"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "efygtp"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative",
+                            "OR",
+                            "not present",
+                            "OR",
+                            "not factor",
+                            "OR",
+                            "not .* consider",
+                            "OR",
+                            "no history"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "e0iuc"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "mycobacter"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "6fboh"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "\\bno\\b",
+                            "OR",
+                            "\\bno evidence"
+                        ],
+                        "Score": 1,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "dvsxrj"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "culture",
+                    "OR",
+                    "sputum"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "df1ee"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative"
+                        ],
+                        "Score": 1,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "kc5yt"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "negative culture",
+                    "OR",
+                    "negative sputum"
+                ],
+                "Score": 1,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "5w7078"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

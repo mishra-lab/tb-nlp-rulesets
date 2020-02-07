@@ -1,0 +1,128 @@
+{
+    "Name": "Negative",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "HIV",
+                    "OR",
+                    "HIV serology"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "208tip"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative",
+                            "OR",
+                            "non-reactive",
+                            "OR",
+                            "unremarkable"
+                        ],
+                        "Score": 5,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "rzb2ho"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "believe",
+                            "OR",
+                            "think"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "5yzoi"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\btest\\b",
+                    "OR",
+                    "\\btested\\b",
+                    "OR",
+                    "\\btesting\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ftate4"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative",
+                            "OR",
+                            "non-reactive",
+                            "OR",
+                            "unremarkable"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "232zoc"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "tuberculosis",
+                            "OR",
+                            "\\bTB\\b",
+                            "OR",
+                            "\\bTST\\b",
+                            "OR",
+                            "\\bskin\\b",
+                            "OR",
+                            "interferon",
+                            "OR",
+                            "\\bIGRA\\b",
+                            "OR",
+                            "QuantiFERON",
+                            "OR",
+                            "sputum",
+                            "OR",
+                            "liver",
+                            "OR",
+                            "pregnancy",
+                            "OR",
+                            "culture",
+                            "OR",
+                            "Hain",
+                            "OR",
+                            "PCR",
+                            "OR",
+                            "smear",
+                            "OR",
+                            "Ishihara",
+                            "OR",
+                            "vision"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "va497j"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

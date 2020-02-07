@@ -1,0 +1,50 @@
+{
+    "Name": "SMH employee",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bSt\\b",
+                    "Michael's",
+                    "Hospital"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "lilbme"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "work",
+                            "OR",
+                            "employ"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "c729ph"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "never",
+                            "OR",
+                            "\\bnot\\b"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "dflltm"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,286 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "contact"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "po4mx"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "tuberculosis",
+                            "OR",
+                            "case",
+                            "OR",
+                            "active",
+                            "OR",
+                            "pulmonary",
+                            "OR",
+                            "TB",
+                            "OR",
+                            "respiratory",
+                            "OR",
+                            "sputum-positive",
+                            "OR",
+                            "AFB-positive",
+                            "OR",
+                            "smear-positive"
+                        ],
+                        "Score": 3,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "b8fvcs"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "latent",
+                            "OR",
+                            "LTBI",
+                            "OR",
+                            "\\bold tuberculosis\\b",
+                            "OR",
+                            "\\bold TB",
+                            "OR",
+                            "tracing",
+                            "OR",
+                            "skin test"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "ha4gf8"
+                    },
+                    {
+                        "Rule": [
+                            "\\bto contact",
+                            "OR",
+                            "contacted",
+                            "OR",
+                            "information",
+                            "OR",
+                            "(will|can|should) .*contact"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "2hjznl"
+                    },
+                    {
+                        "Rule": [
+                            "\\bno\\b",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "never",
+                            "OR",
+                            "denie(s|d)",
+                            "OR",
+                            "\\bdeny\\b",
+                            "OR",
+                            "\\bnor\\b",
+                            "OR",
+                            "unsure",
+                            "OR",
+                            "unaware"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "28hoig"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "exposure",
+                    "OR",
+                    "exposed"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "6gukq99"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "tuberculosis",
+                            "OR",
+                            "case",
+                            "OR",
+                            "active",
+                            "OR",
+                            "pulmonary",
+                            "OR",
+                            "TB",
+                            "OR",
+                            "respiratory",
+                            "OR",
+                            "sputum-positive",
+                            "OR",
+                            "AFB-positive",
+                            "OR",
+                            "smear-positive"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "yftzif"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "latent",
+                            "OR",
+                            "LTBI",
+                            "OR",
+                            "\\bold tuberculosis\\b",
+                            "OR",
+                            "\\bold TB\\b"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "sf9oj"
+                    },
+                    {
+                        "Rule": [
+                            "\\bno\\b",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "never",
+                            "OR",
+                            "denie(s|d)",
+                            "OR",
+                            "\\bdeny\\b",
+                            "OR",
+                            "\\bnor\\b",
+                            "OR",
+                            "unsure",
+                            "OR",
+                            "unaware"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "wgswgn"
+                    },
+                    {
+                        "Rule": [
+                            "jail",
+                            "OR",
+                            "refuge",
+                            "OR",
+                            "shelter",
+                            "OR",
+                            "\\bmask\\b",
+                            "OR",
+                            "\\bsmok"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "9k76nf"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "contact with",
+                    "OR",
+                    "ha(s|d) contact",
+                    "OR",
+                    "expos(ure|ed)"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ou6m3n"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{contacts}"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "oaiw"
+                    },
+                    {
+                        "Rule": [
+                            "tuberculosis",
+                            "OR",
+                            "case",
+                            "OR",
+                            "active",
+                            "OR",
+                            "pulmonary",
+                            "OR",
+                            "TB",
+                            "OR",
+                            "respiratory",
+                            "OR",
+                            "sputum-positive",
+                            "OR",
+                            "AFB-positive",
+                            "OR",
+                            "smear-positive"
+                        ],
+                        "Score": 3,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "xczwsh"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "tracing",
+                            "OR",
+                            "skin test",
+                            "OR",
+                            "\\bsmok"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "9kpcov"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "Label Col": [
+        5
+    ],
+    "Pwds": [
+        "healthcare_worker",
+        "not_healthcare_worker",
+        "family"
+    ],
+    "Specify Function with Python": false,
+    "Use Preprocessor": false
+}

@@ -1,0 +1,12 @@
+{
+    "Label Col": [
+        12
+    ],
+    "Pwds": [
+        "condition_present",
+        "condition_not_present",
+        "renal_conditions"
+    ],
+    "Specify Function with Python": false,
+    "Use Preprocessor": false
+}

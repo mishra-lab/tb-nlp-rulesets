@@ -1,0 +1,2 @@
+!Positive
+"(HIV|HIV serology)",0,"positive","r",1,"sexual contact","i",0

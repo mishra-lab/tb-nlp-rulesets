@@ -1,0 +1,2 @@
+!Negative
+"(HIV|HIV serology)",0,"(negative|non-reactive)","r",1

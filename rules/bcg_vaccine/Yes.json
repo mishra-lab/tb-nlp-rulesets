@@ -1,0 +1,139 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bBCG\\b",
+                    "OR",
+                    "TB vaccin"
+                ],
+                "Score": 0,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "jxdeun"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "\\bha(s|d)\\b",
+                            "OR",
+                            "receiv",
+                            "OR",
+                            "given",
+                            "OR",
+                            "administer",
+                            "OR",
+                            "immuniz"
+                        ],
+                        "Score": 3,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "3h6d7x"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "\\bno\\b",
+                            "OR",
+                            "\\bnot\\b"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "8r5cn"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bBCG\\b",
+                    "OR",
+                    "TB vaccin"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "prhs2"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "scar",
+                            "OR",
+                            "lesion",
+                            "OR",
+                            "mark",
+                            "OR",
+                            "characteristic",
+                            "OR",
+                            "false positive"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "w8ito"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "\\bno\\b",
+                            "OR",
+                            "\\bnot\\b"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "92gui"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bBCG\\b",
+                    "OR",
+                    "TB vaccin"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ystzd3"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "recall",
+                            "OR",
+                            "believe",
+                            "OR",
+                            "thinks"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "0k6rd2"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

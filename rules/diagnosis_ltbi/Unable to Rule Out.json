@@ -1,0 +1,160 @@
+{
+    "Name": "Unable to Rule Out",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "TST",
+                    "OR",
+                    "skin test"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "0btgib"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "positive"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "81qcc6"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "false",
+                            "OR",
+                            "BCG"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "do8blp"
+                    },
+                    {
+                        "Rule": [
+                            "discuss",
+                            "OR",
+                            "option",
+                            "OR",
+                            "assessed",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "\\bno\\b",
+                            "OR",
+                            "suspicion",
+                            "OR",
+                            "suspect",
+                            "OR",
+                            "\\bif\\b",
+                            "OR",
+                            "\\bin the event\\b",
+                            "OR",
+                            "assum"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "9wdjkj"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bIGRA\\b",
+                    "OR",
+                    "QuantiFERON"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "98xbrr"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative"
+                        ],
+                        "Score": -1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "l152a7"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "false"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "ijfie"
+                    },
+                    {
+                        "Rule": [
+                            "discuss",
+                            "OR",
+                            "option",
+                            "OR",
+                            "assessed",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "\\bno\\b",
+                            "OR",
+                            "suspicion",
+                            "OR",
+                            "suspect",
+                            "OR",
+                            "\\bif\\b",
+                            "OR",
+                            "\\bin the event\\b",
+                            "OR",
+                            "assum"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "wej4yf"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "(?:can)not rule out"
+                ],
+                "Score": 2,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "0wsrn"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

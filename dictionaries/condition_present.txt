@@ -1,0 +1,1 @@
+"past medical history of","history of","has","diagnosed with","on medication for","known to have","reports the following on PMH","reports the following on past medical history","past medical history is significant for","PMH is significant for","past medical history includes","PMH includes","background includes","history is significant for","significant for","with\b"

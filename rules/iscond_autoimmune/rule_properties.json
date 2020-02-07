@@ -1,0 +1,12 @@
+{
+    "Label Col": [
+        10
+    ],
+    "Pwds": [
+        "autoimmune_conditions",
+        "condition_present",
+        "condition_not_present"
+    ],
+    "Specify Function with Python": false,
+    "Use Preprocessor": false
+}

@@ -1,0 +1,1 @@
+"renal failure","nephropathy","renal disease","renal condition","renal insufficiency","glomerulonephritis","\bGN\b"

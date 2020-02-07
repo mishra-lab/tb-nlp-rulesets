@@ -1,0 +1,160 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "active"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "22o5a"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "mycobacterium bovis",
+                            "OR",
+                            "tuberculosis",
+                            "OR",
+                            "\\bTB\\b",
+                            "OR",
+                            "infection",
+                            "OR",
+                            "disease"
+                        ],
+                        "Score": 3,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "henlgp"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "low (suspicion|chance)?",
+                            "OR",
+                            "rul(ing|es|ed|e)? out",
+                            "OR",
+                            "denies",
+                            "OR",
+                            "asymptomatic"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "xo7m9b"
+                    },
+                    {
+                        "Rule": [
+                            "past",
+                            "OR",
+                            "previous",
+                            "OR",
+                            "prior"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "n55ei"
+                    },
+                    {
+                        "Rule": [
+                            "contact",
+                            "OR",
+                            "expos"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "uzo2h"
+                    },
+                    {
+                        "Rule": [
+                            "{country}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "epusg"
+                    },
+                    {
+                        "Rule": [
+                            "remind",
+                            "OR",
+                            "discuss"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "kptsnd"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "quadruple"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "zua5cj"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "therapy",
+                            "OR",
+                            "treat"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "k2blab"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "consider",
+                            "OR",
+                            "discuss",
+                            "OR",
+                            "rule out"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "dvrjph"
+                    },
+                    {
+                        "Rule": [
+                            "{country}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "wsjhj4"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

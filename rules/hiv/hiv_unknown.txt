@@ -1,0 +1,3 @@
+!Unknown
+"hiv",0,"((unknown)|(unclear)|(unaware)|(not test)|(\bnot\b know)|(doesn't know)|(never had)|(not available))","r",1,"(positive|negative|non-reactive)","i",0
+"((HIV serology)|(hiv test)|(request.*HIV)|(HIV screen)|(HIV and hepatitis screen)|(HIV and hepatitis test)|(HIV and hepatitis serology))",1,"(positive|negative|non-reactive)","i",0

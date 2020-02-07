@@ -1,0 +1,70 @@
+{
+    "Name": "Not Evaluated",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bIGRA\\b",
+                    "OR",
+                    "TST",
+                    "OR",
+                    "skin test",
+                    "OR",
+                    "sputum",
+                    "OR",
+                    "culture",
+                    "OR",
+                    "\\bPCR\\b"
+                ],
+                "Score": -1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "f744aq"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "positive",
+                            "OR",
+                            "negative"
+                        ],
+                        "Score": -2,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "zpzfbq"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "not recall",
+                            "OR",
+                            "deny",
+                            "OR",
+                            "denies",
+                            "OR",
+                            "symptom",
+                            "OR",
+                            "never had",
+                            "OR",
+                            "not believe",
+                            "OR",
+                            "\\bif\\b",
+                            "OR",
+                            "assum"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "wllxgi"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

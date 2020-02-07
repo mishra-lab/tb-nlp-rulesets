@@ -1,0 +1,8 @@
+!Country,CaptureClassifier
+"came from (?:[\w]+,|the)? ?dict:'\(country\)'",6
+"born (?:and raised)? ?in (?:[\w]+,|the)? ?dict:'\(country\)'",6
+"originally from (?:[\w]+,|the)? ?dict:'\(country\)'",6
+"is from (?:[\w]+,|the)? ?dict:'\(country\)'",2
+"lived in (?:[\w]+,|the)? ?dict:'\(country\)'",1
+"(?:immigrated|arrived).*from (?:[\w]+,|the)? ?dict:'\(country\)'",1
+"dict:'\(country\)'(?:an|n)?(?:-| )born",1

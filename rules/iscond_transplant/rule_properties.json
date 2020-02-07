@@ -1,0 +1,11 @@
+{
+    "Label Col": [
+        13
+    ],
+    "Pwds": [
+        "condition_present",
+        "condition_not_present"
+    ],
+    "Specify Function with Python": false,
+    "Use Preprocessor": false
+}

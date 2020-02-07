@@ -1,0 +1,79 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "transplant"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "z3v0b"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_present}",
+                            "OR",
+                            "\\d+ years ago",
+                            "OR",
+                            "underwent"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "3qs2e7"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "consider",
+                            "OR",
+                            "await"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "wpgnj"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "transplant"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "7otyhe"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "diagnosed",
+                            "OR",
+                            "treated"
+                        ],
+                        "Score": 2,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "aubng"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

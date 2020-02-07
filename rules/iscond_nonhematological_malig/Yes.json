@@ -1,0 +1,136 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{nonhematological_malig}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "z3v0b"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_present}"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "3qs2e7"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "does not appear",
+                            "OR",
+                            "\\bno\\b",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "cannot rule out",
+                            "OR",
+                            "at risk of",
+                            "OR",
+                            "rule out"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "l1vjr9"
+                    },
+                    {
+                        "Rule": [
+                            "cannot be ruled out"
+                        ],
+                        "Score": 0,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "v1ep9"
+                    },
+                    {
+                        "Rule": [
+                            "{contacts}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "rqpxu9"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "{nonhematological_malig}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "7otyhe"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "diagnosed",
+                            "OR",
+                            "treated"
+                        ],
+                        "Score": 2,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "aubng"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "{contacts}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "vfumn"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "is on chemo",
+                    "OR",
+                    "is on radiation",
+                    "OR",
+                    "receiv.* radiation",
+                    "OR",
+                    "receiv.* chemo"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "eq7dk"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

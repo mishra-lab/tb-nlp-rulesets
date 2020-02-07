@@ -1,0 +1,78 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bBCG\\b",
+                    "OR",
+                    "TB vaccin"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "h5kll6"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "denies",
+                            "OR",
+                            "never had",
+                            "OR",
+                            "does not report",
+                            "OR",
+                            "\\bno history",
+                            "OR",
+                            "\\bno record",
+                            "OR",
+                            "\\bnot document"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "rv64a9"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bBCG\\b",
+                    "OR",
+                    "TB vaccin"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "welyel"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "scar",
+                            "OR",
+                            "lesion",
+                            "OR",
+                            "mark"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "0frlz"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

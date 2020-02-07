@@ -1,0 +1,101 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{autoimmune_conditions}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "w3pumi"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_not_present}"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "vh0hys"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "no significant past medical history",
+                    "OR",
+                    "no signficant PMH",
+                    "OR",
+                    "nothing on PMH",
+                    "OR",
+                    "nothing on past medical history",
+                    "OR",
+                    "nil on past medical history",
+                    "OR",
+                    "nil on PMH"
+                ],
+                "Score": 1,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "5kz55"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "past medical history",
+                    "OR",
+                    "previous medical history"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "s16kk"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "nil",
+                            "OR",
+                            "\\bno\\b"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "w8uoy"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "{autoimmune_conditions}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "znh4au"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

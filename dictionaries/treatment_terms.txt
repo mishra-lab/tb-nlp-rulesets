@@ -1,0 +1,1 @@
+"prescription.*for","undergoing","initiate","currently on","beg(i|a)n","start","took","tak(e|ing)","treatment.*with","regimen.*(of|includes?)","therapy.*with","trial","remains? on","underwent","current medication","current.*regimen","continues?"

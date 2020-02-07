@@ -1,0 +1,97 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "mycobacter",
+                    "OR",
+                    "culture"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "l6s5lp"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "non-tuberculosis",
+                            "OR",
+                            "nontuberculous",
+                            "OR",
+                            "\\bnon tuberculosis\\b",
+                            "OR",
+                            "non-tuberculous"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "bcgken"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "mycobacter",
+                    "OR",
+                    "culture"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ruc7b"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{non_tb_mycobacteria}"
+                        ],
+                        "Score": 5,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "vgms0h"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "{non_tb_mycobacteria}"
+                ],
+                "Score": 3,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "ql6fv"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "negative"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "f6dl4a"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

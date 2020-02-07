@@ -1,0 +1,125 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bDM\\b",
+                    "OR",
+                    "Diabetes",
+                    "OR",
+                    "type-two",
+                    "OR",
+                    "type two",
+                    "OR",
+                    "type-one",
+                    "OR",
+                    "type one"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "7ad65m"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_not_present}"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "4t4h0hn"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "no significant past medical history",
+                    "OR",
+                    "no signficant PMH",
+                    "OR",
+                    "nothing on PMH",
+                    "OR",
+                    "nothing on past medical history",
+                    "OR",
+                    "nil on past medical history",
+                    "OR",
+                    "nil on PMH"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "gjnkzg"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "past medical history",
+                    "OR",
+                    "previous medical history"
+                ],
+                "Score": 1,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "6nx2ua"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "nil",
+                            "OR",
+                            "unremarkable"
+                        ],
+                        "Score": 1,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "3aprzd"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "\\bDM\\b",
+                            "OR",
+                            "diabetes",
+                            "OR",
+                            "type-two",
+                            "OR",
+                            "type two",
+                            "OR",
+                            "type 2",
+                            "OR",
+                            "type one",
+                            "OR",
+                            "type-one",
+                            "OR",
+                            "type 1"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "69ply"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

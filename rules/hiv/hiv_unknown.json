@@ -1,0 +1,122 @@
+{
+    "Name": "Unknown",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "HIV"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "uznsci"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "unknown",
+                            "OR",
+                            "unclear",
+                            "OR",
+                            "unaware",
+                            "OR",
+                            "not test",
+                            "OR",
+                            "not know",
+                            "OR",
+                            "doesn't know",
+                            "OR",
+                            "never had",
+                            "OR",
+                            "not available",
+                            "OR",
+                            "denies",
+                            "OR",
+                            "think",
+                            "OR",
+                            "believe",
+                            "OR",
+                            "risk"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "meoc6b"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "positive",
+                            "OR",
+                            "negative",
+                            "OR",
+                            "non-reactive",
+                            "OR",
+                            "reactive"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "r15lgr"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "HIV"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "rqv6x7"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "serology",
+                            "OR",
+                            "test",
+                            "OR",
+                            "request",
+                            "OR",
+                            "screen"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "98lh46"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "positive",
+                            "OR",
+                            "negative",
+                            "OR",
+                            "non-reactive",
+                            "OR",
+                            "reactive"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "as5s4"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

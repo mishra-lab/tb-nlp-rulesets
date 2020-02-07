@@ -1,0 +1,84 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{healthcare_worker}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ai7m8"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "\\bis a\\b",
+                            "OR",
+                            "\\bwas a\\b",
+                            "OR",
+                            "start(ing)? as\\b",
+                            "OR",
+                            "volunteer",
+                            "OR",
+                            "\\bwork\\b",
+                            "OR",
+                            "\\bworks\\b",
+                            "OR",
+                            "\\bworking\\b",
+                            "OR",
+                            "\\bworked\\b",
+                            "OR",
+                            "\\bemployed",
+                            "OR",
+                            "\\btrain",
+                            "OR",
+                            "ha(s|d) been a(?:n)\\b"
+                        ],
+                        "Score": 3,
+                        "Modifier": "b",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "id31y"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "{family}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "7f5j1s"
+                    },
+                    {
+                        "Rule": [
+                            "never",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "\\bno\\b",
+                            "OR",
+                            "consider",
+                            "OR",
+                            "apply",
+                            "OR",
+                            "plan"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "ooa9dt"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{hematological_malig}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "z3v0b"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_present}"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "3qs2e7"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "{hematological_malig}"
+                ],
+                "Score": 0,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "7otyhe"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "diagnosed",
+                            "OR",
+                            "treated"
+                        ],
+                        "Score": 2,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "aubng"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "is on chemo",
+                    "OR",
+                    "is on radiation",
+                    "OR",
+                    "receiv.* radiation",
+                    "OR",
+                    "receiv.* chemo"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "eq7dk"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

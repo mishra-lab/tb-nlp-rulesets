@@ -1,0 +1,131 @@
+{
+    "Name": "HCW",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "hospital",
+                    "OR",
+                    "healthcare"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "3awtr"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "work"
+                        ],
+                        "Score": 1,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "i3g3u"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "never",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "assess",
+                            "OR",
+                            "check"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "g39np"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "pediatrician",
+                    "OR",
+                    "nurse",
+                    "OR",
+                    "doctor",
+                    "OR",
+                    "dental tech"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "dlwh5"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "work",
+                            "OR",
+                            "employ"
+                        ],
+                        "Score": 1,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "761sx"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "never",
+                            "OR",
+                            "\\bnot\\b"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "7xbsr"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "nursing"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "4m00au"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "enrolled in",
+                            "OR",
+                            "training",
+                            "OR",
+                            "student"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "8npw1k"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

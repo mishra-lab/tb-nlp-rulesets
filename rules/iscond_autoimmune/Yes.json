@@ -1,0 +1,46 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{autoimmune_conditions}"
+                ],
+                "Score": 0,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "2t3vty"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_present}",
+                            "OR",
+                            "on prednisone for"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "3c1stq"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "Osteoarthritis"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "fxytt7"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

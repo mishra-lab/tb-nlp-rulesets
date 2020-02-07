@@ -1,0 +1,81 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{not_healthcare_worker}"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "mceer6"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bemployed",
+                    "OR",
+                    "volunteer",
+                    "OR",
+                    "\\btrain",
+                    "OR",
+                    "\\bwork\\b",
+                    "OR",
+                    "\\bworks\\b",
+                    "OR",
+                    "\\bworking\\b",
+                    "OR",
+                    "\\bworked\\b",
+                    "OR",
+                    "unemployed",
+                    "OR",
+                    "student",
+                    "OR",
+                    "\\bretire",
+                    "OR",
+                    "ha(s|d) been a(?:n)\\b"
+                ],
+                "Score": 1,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "uoujh"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "{healthcare_worker}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "b37bk"
+                    },
+                    {
+                        "Rule": [
+                            "blood",
+                            "OR",
+                            "permit"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "6vpr9m"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

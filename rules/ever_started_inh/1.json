@@ -1,0 +1,115 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bINH\\b",
+                    "OR",
+                    "Isoniazid",
+                    "OR",
+                    "isonicotinylhydrazide"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "7gx7en"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "refuse",
+                            "OR",
+                            "no interest",
+                            "OR",
+                            "resistant",
+                            "OR",
+                            "intolerant",
+                            "OR",
+                            "decline"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "dbu85f"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "risk factor",
+                            "OR",
+                            "counsel",
+                            "OR",
+                            "discuss",
+                            "OR",
+                            "assess",
+                            "OR",
+                            "candidate",
+                            "OR",
+                            "offer"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "4jv1bj"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bINH\\b",
+                    "OR",
+                    "Isoniazid",
+                    "OR",
+                    "isonicotinylhydrazide"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "kr89dl"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "resistant",
+                            "OR",
+                            "side effect",
+                            "OR",
+                            "problem",
+                            "OR",
+                            "fatigue",
+                            "OR",
+                            "allergy"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "tzyiy"
+                    },
+                    {
+                        "Rule": [
+                            "{treatment_terms}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "ku127h"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

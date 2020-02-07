@@ -1,0 +1,82 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bDM\\b",
+                    "OR",
+                    "Diabetes",
+                    "OR",
+                    "type-two",
+                    "OR",
+                    "type two",
+                    "OR",
+                    "type-one",
+                    "OR",
+                    "type one"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "z3v0b"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{condition_present}"
+                        ],
+                        "Score": 2,
+                        "Modifier": "b",
+                        "Selected": true,
+                        "type": "Replace",
+                        "u_id": "3qs2e7"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bDM\\b",
+                    "OR",
+                    "Diabetes",
+                    "OR",
+                    "type-two",
+                    "OR",
+                    "type two",
+                    "OR",
+                    "type-one",
+                    "OR",
+                    "type one"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "7otyhe"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "diagnosed",
+                            "OR",
+                            "treated"
+                        ],
+                        "Score": 2,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "aubng"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

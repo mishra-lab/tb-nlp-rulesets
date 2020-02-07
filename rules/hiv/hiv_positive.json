@@ -1,0 +1,124 @@
+{
+    "Name": "Positive",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "HIV",
+                    "OR",
+                    "HIV serology"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "a04ehm"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "positive"
+                        ],
+                        "Score": 5,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "mbqnbm"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "sexual contact",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "\\bno contact"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "anpep"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "\\btest\\b",
+                    "OR",
+                    "\\btested\\b",
+                    "OR",
+                    "\\btesting\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ilo3t"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "positive",
+                            "OR",
+                            "reactive"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "2h9t7"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "tuberculosis",
+                            "OR",
+                            "\\bTB\\b",
+                            "OR",
+                            "\\bTST\\b",
+                            "OR",
+                            "\\bskin\\b",
+                            "OR",
+                            "interferon",
+                            "OR",
+                            "\\bIGRA\\b",
+                            "OR",
+                            "QuantiFERON",
+                            "OR",
+                            "sputum",
+                            "OR",
+                            "liver",
+                            "OR",
+                            "pregnancy",
+                            "OR",
+                            "culture",
+                            "OR",
+                            "Hain",
+                            "OR",
+                            "PCR",
+                            "OR",
+                            "smear",
+                            "OR",
+                            "Ishihara",
+                            "OR",
+                            "vision"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "5r0do"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

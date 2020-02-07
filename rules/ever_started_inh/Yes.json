@@ -1,0 +1,119 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bINH\\b",
+                    "OR",
+                    "Isoniazid",
+                    "OR",
+                    "isonicotinylhydrazide"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "63pxft"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{treatment_terms}"
+                        ],
+                        "Score": 3,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "z3c9hd"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "counsel",
+                            "OR",
+                            "discuss",
+                            "OR",
+                            "assess",
+                            "OR",
+                            "candidate",
+                            "OR",
+                            "encourage",
+                            "OR",
+                            "offer"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "eat9o"
+                    },
+                    {
+                        "Rule": [
+                            "refuse",
+                            "OR",
+                            "decline",
+                            "OR",
+                            "no interest",
+                            "OR",
+                            "oppose"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "udze7u"
+                    },
+                    {
+                        "Rule": [
+                            "resistant",
+                            "OR",
+                            "intolerant",
+                            "OR",
+                            "substandard"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "g1exi9"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "on INH",
+                    "OR",
+                    "on Isoniazid",
+                    "OR",
+                    "on isonicotinylhydrazide"
+                ],
+                "Score": 3,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "b8h0f"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "not on"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "9iflbs"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}
