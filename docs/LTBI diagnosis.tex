@@ -1,0 +1,71 @@
+\documentclass[border=10pt,tikz]{standalone}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+\forestset{
+	default preamble={
+		before typesetting nodes={
+			!r.replace by={[, coordinate, append]}
+		},
+		where n children=0{
+			tier=word,
+		}{
+			diamond, aspect=1.5,
+		},
+		where level=0{}{
+			if n=1{
+				edge label={node[pos=.2, above] {Y}},
+			}{
+				edge label={node[pos=.2, above] {N}},
+			}
+		},
+		for tree={
+			edge+={thick, -Latex},
+			math content,
+			s sep'+=2cm,
+			draw,
+			thick,
+			edge path'={ (!u) -| (.parent)},
+			align=center
+		}
+	}
+}
+
+\begin{document}
+	\begin{forest}
+		[ old TB?
+			[ untreated old LTBI?
+				[ LTBI ]
+				[ CXR/sputum +ve?
+					[ no LTBI (new active TB) ]
+					[ unable to rule out ]
+				]
+			] 
+			[ active TB?
+				[ no LTBI ]
+				[ IGRA done w/o TST?
+					[ IGRA +ve?
+						[ LTBI ]
+						[ no LTBI ]
+					]
+					[ TST +ve?
+						[ BCG done?
+							[ high risk/exposure?
+								[ LTBI ]
+								[ IGRA done?
+									[ IGRA +ve?
+										[ LTBI ]
+										[ no LTBI (false +ve TST) ]
+									]
+									[ unable to rule out ]
+								]
+						 	] 
+							[ LTBI ] 
+						]
+						[ no LTBI ]
+					]
+				]
+			] 
+		]
+	\end{forest}
+\end{document}
