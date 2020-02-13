@@ -1,3 +1,5 @@
+
 [submodule "util/CHARTextract"]
 	path = util/CHARTextract
-	url = git@github.com:LKS-CHART/CHARTextract.git
+	url = git@github.com:Express50/CHARTextract.git
+	branch = standalone
