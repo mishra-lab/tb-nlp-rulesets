@@ -1,7 +1,11 @@
 import sys
 from pathlib import Path
-sys.path.append(Path('./CHARTextract/RegexNLP-py/'))
+sys.path.append(str(Path('./CHARTextract/RegexNLP-py/')))
 from __main_simple__ import run_variable
+
+# Fix stdout redirection due to CHARTextract
+sys.stdout = sys.__stdout__
+sys.stderr = sys.__stderr__
 
 import json
 import pandas as pd
@@ -23,7 +27,7 @@ def main(args):
 
     # gather predictions into a single CSV
     df_predictions = pd.DataFrame()
-    generated_data = Path('./CHARTextract/RegexNLP-node/generated_data/')
+    generated_data = Path('./generated_data/')
     reports = list(generated_data.glob('**/error_report.json'))
 
     for report in reports:
@@ -44,7 +48,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--rules', help='Path to rules folder')
+    parser.add_argument('--rules', help='Path to rules folder', required=True)
 
     args = parser.parse_args()
     main(args)
