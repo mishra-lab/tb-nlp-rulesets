@@ -1,0 +1,3 @@
+[submodule "util/CHARTextract"]
+	path = util/CHARTextract
+	url = git@github.com:LKS-CHART/CHARTextract.git

@@ -1,0 +1,27 @@
+{
+    "Data File": [
+        "PLACEHOLDER"
+    ],
+    "Label File": [
+        "PLACEHOLDER"
+    ],
+    "Rules Folder": [
+        "..",
+        "rules"
+    ],
+    "Dictionaries Folder": [
+        "..",
+        "dictionaries"
+    ],
+    "Data Id Cols": 0,
+    "Data First Row": 1,
+    "Data Cols": 1,
+    "Concatenate Data": true,
+    "Label Id Col": 0,
+    "Label First Row": 1,
+    "Create Train and Valid": false,
+    "Prediction Mode": true,
+    "Valid Label File": [
+        "PLACEHOLDER"
+    ]
+}
