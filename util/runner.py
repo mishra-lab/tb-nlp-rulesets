@@ -17,12 +17,13 @@ def main(args):
     # run all rules in Rules Folder
     for rule in rules:
         rule_name = rule.stem
-        # flag to determine whether to run rules in advanced mode
+        # flag to determine whether to run rules in simple mode
         # i.e. rules that have .json files other than rule_properties or rule_settings
         mode = len(
             list(filter(lambda x: x.stem not in ('rule_properties', 'rule_settings'), rule.glob('*.json')))
             ) > 0
-        mode_str = 'advanced' if mode else 'simple'
+        mode_str = 'simple' if mode else 'advanced'
+        print(f"Running rule {rule_name} using {mode_str} mode")
         run_variable(rule_name, './project_settings.json', mode=mode_str)
 
     # gather predictions into a single CSV
