@@ -1,6 +1,6 @@
 {
     "Classifier Type": "RegexClassifier",
     "Classifier Args": {
-        "negative_label": "Not recorded"
+        "negative_label": "No"
     }
 }

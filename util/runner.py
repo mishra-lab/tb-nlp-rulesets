@@ -24,7 +24,7 @@ def main(args):
             ) > 0
         mode_str = 'simple' if mode else 'advanced'
         print(f"Running rule {rule_name} using {mode_str} mode")
-        run_variable(rule_name, './project_settings.json', mode=mode_str)
+        run_variable(rule_name, args.settings, mode=mode_str)
 
     # gather predictions into a single CSV
     df_predictions = pd.DataFrame()
@@ -37,7 +37,7 @@ def main(args):
 
         predictions = {}
         for pid, case in report_json["patient_cases"].items():
-            predictions[int(pid)] = case["pred"]
+            predictions[pid] = case["pred"]
 
         df_predictions = pd.concat([df_predictions, pd.Series(predictions, name=report.parts[1])], axis=1)
 
@@ -50,6 +50,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--rules', help='Path to rules folder', required=True)
+    parser.add_argument('--settings', help='Path to project settings file', default='./project_settings.json')
 
     args = parser.parse_args()
     main(args)

@@ -74,11 +74,15 @@
                             "OR",
                             "intolerant",
                             "OR",
-                            "substandard"
+                            "substandard",
+                            "OR",
+                            "unsuit",
+                            "OR",
+                            "substitute"
                         ],
                         "Score": 0,
                         "Modifier": "None",
-                        "Selected": false,
+                        "Selected": true,
                         "type": "Ignore",
                         "u_id": "g1exi9"
                     }
@@ -127,7 +131,7 @@
                     "\\bRMP\\b"
                 ],
                 "Score": 0,
-                "Selected": true,
+                "Selected": false,
                 "type": "Primary",
                 "u_id": "99hzf8"
             },
