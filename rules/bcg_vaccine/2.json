@@ -1,5 +1,82 @@
 {
-    "Name": "2",
+    "Name": "Unknown",
     "Dirty": false,
-    "Rules": []
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bBCG\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ugxwq"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "vaccin"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "stgzr"
+                    },
+                    {
+                        "Rule": [
+                            "not sure",
+                            "OR",
+                            "not recall",
+                            "OR",
+                            "unknown",
+                            "OR",
+                            "not know",
+                            "OR",
+                            "unclear",
+                            "OR",
+                            "unsure",
+                            "OR",
+                            "uncertain",
+                            "OR",
+                            "not remember"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "m6uqbi"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "unknown time",
+                            "OR",
+                            "recall when"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "g7jo2l"
+                    },
+                    {
+                        "Rule": [
+                            "booster",
+                            "OR",
+                            "bladder"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "wg8mu"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
 }

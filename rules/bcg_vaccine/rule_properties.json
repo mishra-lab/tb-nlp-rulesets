@@ -1,5 +1,7 @@
 {
-    "Label Col": 1,
+    "Label Col": [
+        7
+    ],
     "Pwds": [],
     "Specify Function with Python": false,
     "Use Preprocessor": false

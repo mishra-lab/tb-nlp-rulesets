@@ -5,72 +5,98 @@
         {
             "Primary": {
                 "Rule": [
-                    "\\bBCG\\b",
-                    "OR",
-                    "TB vaccin"
+                    "\\bBCG\\b"
                 ],
                 "Score": 0,
                 "Selected": false,
                 "type": "Primary",
-                "u_id": "h5kll6"
+                "u_id": "51l5w7"
             },
             "Secondary": {
                 "Replace": [
                     {
                         "Rule": [
-                            "denies",
-                            "OR",
-                            "never had",
-                            "OR",
-                            "does not report",
-                            "OR",
-                            "\\bno history",
-                            "OR",
-                            "\\bno record",
-                            "OR",
-                            "\\bnot document"
+                            "vaccin"
                         ],
-                        "Score": 2,
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "0g5xv9"
+                    },
+                    {
+                        "Rule": [
+                            "had",
+                            "OR",
+                            "report",
+                            "OR",
+                            "history",
+                            "OR",
+                            "record",
+                            "OR",
+                            "document",
+                            "OR",
+                            "receiv",
+                            "OR",
+                            "recall",
+                            "OR",
+                            "believ",
+                            "OR",
+                            "remember"
+                        ],
+                        "Score": 0,
                         "Modifier": "b",
                         "Selected": false,
                         "type": "Replace",
-                        "u_id": "rv64a9"
-                    }
-                ],
-                "Ignore": [],
-                "Add": []
-            }
-        },
-        {
-            "Primary": {
-                "Rule": [
-                    "\\bBCG\\b",
-                    "OR",
-                    "TB vaccin"
-                ],
-                "Score": 0,
-                "Selected": false,
-                "type": "Primary",
-                "u_id": "welyel"
-            },
-            "Secondary": {
-                "Replace": [
+                        "u_id": "959u8"
+                    },
                     {
                         "Rule": [
-                            "scar",
+                            "never",
                             "OR",
-                            "lesion",
+                            "\\bnot\\b",
                             "OR",
-                            "mark"
+                            "\\bno\\b",
+                            "OR",
+                            "denies"
                         ],
                         "Score": 1,
                         "Modifier": "None",
                         "Selected": false,
                         "type": "Replace",
-                        "u_id": "0frlz"
+                        "u_id": "5c3ev5"
                     }
                 ],
-                "Ignore": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "not know",
+                            "OR",
+                            "not sure",
+                            "OR",
+                            "unsure",
+                            "OR",
+                            "unclear"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "l7tzup"
+                    },
+                    {
+                        "Rule": [
+                            "booster",
+                            "OR",
+                            "bladder"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "qc1sy9"
+                    }
+                ],
                 "Add": []
             }
         }

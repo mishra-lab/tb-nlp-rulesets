@@ -5,20 +5,28 @@
         {
             "Primary": {
                 "Rule": [
-                    "\\bBCG\\b",
-                    "OR",
-                    "TB vaccin"
+                    "\\bBCG\\b"
                 ],
                 "Score": 0,
-                "Selected": true,
+                "Selected": false,
                 "type": "Primary",
-                "u_id": "jxdeun"
+                "u_id": "m6g2u"
             },
             "Secondary": {
                 "Replace": [
                     {
                         "Rule": [
-                            "\\bha(s|d)\\b",
+                            "vaccin"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "isf4wa"
+                    },
+                    {
+                        "Rule": [
+                            "\\bha(s|d|ve)\\b",
                             "OR",
                             "receiv",
                             "OR",
@@ -28,11 +36,11 @@
                             "OR",
                             "immuniz"
                         ],
-                        "Score": 3,
+                        "Score": 2,
                         "Modifier": "b",
                         "Selected": false,
                         "type": "Replace",
-                        "u_id": "3h6d7x"
+                        "u_id": "86pb6"
                     }
                 ],
                 "Ignore": [
@@ -40,14 +48,22 @@
                         "Rule": [
                             "\\bno\\b",
                             "OR",
-                            "\\bnot\\b"
+                            "\\bnot\\b",
+                            "OR",
+                            "never",
+                            "OR",
+                            "unclear",
+                            "OR",
+                            "unsure",
+                            "OR",
+                            "uncertain"
                         ],
                         "Score": 0,
                         "Modifier": "b",
                         "Selected": false,
                         "type": "Ignore",
-                        "u_id": "8r5cn"
-                    }
+                        "u_id": "swn4lh"
+                    },
                 ],
                 "Add": []
             }
@@ -55,34 +71,28 @@
         {
             "Primary": {
                 "Rule": [
-                    "\\bBCG\\b",
+                    "scar",
                     "OR",
-                    "TB vaccin"
+                    "lesion",
+                    "OR",
+                    "mark"
                 ],
                 "Score": 0,
                 "Selected": false,
                 "type": "Primary",
-                "u_id": "prhs2"
+                "u_id": "9nipzq"
             },
             "Secondary": {
                 "Replace": [
                     {
                         "Rule": [
-                            "scar",
-                            "OR",
-                            "lesion",
-                            "OR",
-                            "mark",
-                            "OR",
-                            "characteristic",
-                            "OR",
-                            "false positive"
+                            "BCG (?:vaccin)"
                         ],
                         "Score": 2,
                         "Modifier": "None",
-                        "Selected": false,
+                        "Selected": true,
                         "type": "Replace",
-                        "u_id": "w8ito"
+                        "u_id": "glfg93"
                     }
                 ],
                 "Ignore": [
@@ -93,45 +103,12 @@
                             "\\bnot\\b"
                         ],
                         "Score": 0,
-                        "Modifier": "b",
-                        "Selected": false,
-                        "type": "Ignore",
-                        "u_id": "92gui"
-                    }
-                ],
-                "Add": []
-            }
-        },
-        {
-            "Primary": {
-                "Rule": [
-                    "\\bBCG\\b",
-                    "OR",
-                    "TB vaccin"
-                ],
-                "Score": 0,
-                "Selected": false,
-                "type": "Primary",
-                "u_id": "ystzd3"
-            },
-            "Secondary": {
-                "Replace": [
-                    {
-                        "Rule": [
-                            "recall",
-                            "OR",
-                            "believe",
-                            "OR",
-                            "thinks"
-                        ],
-                        "Score": 1,
                         "Modifier": "None",
                         "Selected": false,
-                        "type": "Replace",
-                        "u_id": "0k6rd2"
+                        "type": "Ignore",
+                        "u_id": "oylz0e"
                     }
                 ],
-                "Ignore": [],
                 "Add": []
             }
         }
