@@ -10,8 +10,29 @@ sys.stderr = sys.__stderr__
 import json
 import pandas as pd
 
+def save_results(df, location, version=1):
+    """
+    Try to save results at location; if file exists, append incremental
+    integer to location file name until we can save
+
+    df:         Pandas dataframe containing results
+    location:   pathlib object to output file location
+    """
+
+    try:
+        df.to_csv(str(location))
+    except PermissionError as err:
+        stem = location.stem
+        new_location = location.parent / (stem + str(version) + '.csv') 
+
+        save_results(df, new_location, version + 1)
+
+
 def main(args):
-    rules_folder = Path(args.rules)
+    with open(Path(args.settings)) as f:
+    	project_settings = json.load(f)
+        
+    rules_folder = Path(*project_settings['Rules Folder'])
     rules = list(rules_folder.glob('*'))
 
     # run all rules in Rules Folder
@@ -41,16 +62,18 @@ def main(args):
 
         df_predictions = pd.concat([df_predictions, pd.Series(predictions, name=report.parts[1])], axis=1)
 
+    # save to output folder
     df_predictions.index.name = 'Patient ID'
-    df_predictions.to_csv('./predictions.csv')
+    output_path = Path(args.output)
+    save_results(df_predictions, output_path)
     print(df_predictions.head())
 
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--rules', help='Path to rules folder', required=True)
     parser.add_argument('--settings', help='Path to project settings file', default='./project_settings.json')
+    parser.add_argument('--output', help='Path to output file', default='./predictions.csv')
 
     args = parser.parse_args()
     main(args)
