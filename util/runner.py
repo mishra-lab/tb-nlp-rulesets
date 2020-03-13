@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+import shutil
 sys.path.append(str(Path('./CHARTextract/RegexNLP-py/')))
 from __main_simple__ import run_variable
 
@@ -29,11 +30,19 @@ def save_results(df, location, version=1):
 
 
 def main(args):
+    # cleanup previous runs
+    generated_data = Path('./generated_data/')
+    shutil.rmtree(generated_data)
+
     with open(Path(args.settings)) as f:
     	project_settings = json.load(f)
-        
+
     rules_folder = Path(*project_settings['Rules Folder'])
     rules = list(rules_folder.glob('*'))
+
+    # filter out only the rules we want
+    if args.rules is not None:
+        rules = list(filter(lambda x: x.stem in args.rules, rules))
 
     # run all rules in Rules Folder
     for rule in rules:
@@ -49,7 +58,6 @@ def main(args):
 
     # gather predictions into a single CSV
     df_predictions = pd.DataFrame()
-    generated_data = Path('./generated_data/')
     reports = list(generated_data.glob('**/error_report.json'))
 
     for report in reports:
@@ -74,6 +82,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--settings', help='Path to project settings file', default='./project_settings.json')
     parser.add_argument('--output', help='Path to output file', default='./predictions.csv')
+    parser.add_argument('--rules', help='(Optional) List of rules to run', required=False, nargs='+')
 
     args = parser.parse_args()
     main(args)
