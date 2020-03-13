@@ -1,4 +1,4 @@
-!Country,CaptureClassifier
+!Origin,CaptureClassifier
 "came from (?:[\w]+,|the)? ?dict:'\(country\)'",6
 "born (?:and raised)? ?in (?:[\w]+,|the)? ?dict:'\(country\)'",6
 "originally from (?:[\w]+,|the)? ?dict:'\(country\)'",6
