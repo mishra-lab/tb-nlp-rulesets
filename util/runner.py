@@ -32,7 +32,8 @@ def save_results(df, location, version=1):
 def main(args):
     # cleanup previous runs
     generated_data = Path('./generated_data/')
-    shutil.rmtree(generated_data)
+    if generated_data.exists():
+        shutil.rmtree(generated_data)
 
     with open(Path(args.settings)) as f:
     	project_settings = json.load(f)

@@ -278,3 +278,5 @@ TSWLatexianTemp*
 ##
 # Ignore all future changes to util/project_settings.json
 util/project_settings.json
+
+util/generated_data/
