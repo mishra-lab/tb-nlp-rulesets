@@ -1,0 +1,173 @@
+{
+    "Name": "No",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "ltbi",
+                    "OR",
+                    "latent"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "tj2u0j"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "absence of",
+                            "OR",
+                            "unlikely",
+                            "OR",
+                            "no evidence",
+                            "OR",
+                            "does not have"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "c898os"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "active"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "a2kyn"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "tuberculosis",
+                    "OR",
+                    "\\btb\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "15jujj"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "\\bactive\\b",
+                            "OR",
+                            "spinal",
+                            "OR",
+                            "epididymal"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "ivep1ji"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "discuss",
+                            "OR",
+                            "option",
+                            "OR",
+                            "assessed",
+                            "OR",
+                            "expos",
+                            "OR",
+                            "remind",
+                            "OR",
+                            "counsel",
+                            "OR",
+                            "contact",
+                            "OR",
+                            "review",
+                            "OR",
+                            "rule out",
+                            "OR",
+                            "complete",
+                            "OR",
+                            "\\brisk",
+                            "OR",
+                            "\\bdeveloping\\b",
+                            "OR",
+                            "assum"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "mqcvje"
+                    },
+                    {
+                        "Rule": [
+                            "denies",
+                            "OR",
+                            "asymptomatic",
+                            "OR",
+                            "no evidence",
+                            "OR",
+                            "\\bno\\b",
+                            "OR",
+                            "\\bnot\\b",
+                            "OR",
+                            "deny",
+                            "OR",
+                            "rule(?:d) out"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "nczsll"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "quadruple"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "yxsqv7"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "\\bon\\b",
+                            "OR",
+                            "treated",
+                            "OR",
+                            "taking"
+                        ],
+                        "Score": 2,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "uh3mlo"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}
