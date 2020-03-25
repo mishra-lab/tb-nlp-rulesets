@@ -64,95 +64,29 @@
                             "OR",
                             "complete",
                             "OR",
-                            "underwent"
+                            "underwent",
+                            "OR",
+                            "explain"
                         ],
                         "Score": 0,
                         "Modifier": "None",
                         "Selected": false,
                         "type": "Ignore",
                         "u_id": "aj20n"
-                    }
-                ],
-                "Add": []
-            }
-        },
-        {
-            "Primary": {
-                "Rule": [
-                    "tuberculosis",
-                    "OR",
-                    "\\btb\\b"
-                ],
-                "Score": 0,
-                "Selected": false,
-                "type": "Primary",
-                "u_id": "15jujj"
-            },
-            "Secondary": {
-                "Replace": [
-                    {
-                        "Rule": [
-                            "\\bactive\\b"
-                        ],
-                        "Score": -1,
-                        "Modifier": "None",
-                        "Selected": false,
-                        "type": "Replace",
-                        "u_id": "ivep1ji"
-                    }
-                ],
-                "Ignore": [
-                    {
-                        "Rule": [
-                            "discuss",
-                            "OR",
-                            "option",
-                            "OR",
-                            "assessed",
-                            "OR",
-                            "expos",
-                            "OR",
-                            "remind",
-                            "OR",
-                            "counsel",
-                            "OR",
-                            "contact",
-                            "OR",
-                            "review",
-                            "OR",
-                            "rule out",
-                            "OR",
-                            "complete",
-                            "OR",
-                            "\\brisk",
-                            "OR",
-                            "\\bdeveloping\\b",
-                            "OR",
-                            "assum"
-                        ],
-                        "Score": 0,
-                        "Modifier": "None",
-                        "Selected": true,
-                        "type": "Ignore",
-                        "u_id": "mqcvje"
                     },
                     {
                         "Rule": [
-                            "denies",
-                            "OR",
-                            "asymptomatic",
+                            "does not",
                             "OR",
                             "no evidence",
                             "OR",
-                            "deny",
-                            "OR",
-                            "rule(?:d) out"
+                            "not believe"
                         ],
                         "Score": 0,
                         "Modifier": "None",
                         "Selected": false,
                         "type": "Ignore",
-                        "u_id": "nczsll"
+                        "u_id": "45zka5"
                     }
                 ],
                 "Add": []

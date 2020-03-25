@@ -24,11 +24,13 @@
                             "OR",
                             "no evidence",
                             "OR",
-                            "does not have"
+                            "does not have",
+                            "OR",
+                            "not believe"
                         ],
                         "Score": 2,
                         "Modifier": "None",
-                        "Selected": false,
+                        "Selected": true,
                         "type": "Replace",
                         "u_id": "c898os"
                     }
@@ -104,11 +106,13 @@
                             "OR",
                             "\\bdeveloping\\b",
                             "OR",
-                            "assum"
+                            "assum",
+                            "OR",
+                            "explain"
                         ],
                         "Score": 0,
                         "Modifier": "None",
-                        "Selected": true,
+                        "Selected": false,
                         "type": "Ignore",
                         "u_id": "mqcvje"
                     },
