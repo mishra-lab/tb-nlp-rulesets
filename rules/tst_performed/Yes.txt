@@ -1,0 +1,6 @@
+!Yes
+#Don't forget to save the file to preserve the new name.
+"(positive|negative) dict:'\(tst_terms\)'",1
+"(im)?planted (a|the) dict:'\(tst_terms\)'",1
+"(recently|believes s?he) had (a|the) dict:'\(tst_terms\)'",1
+"(s?he|did) (have|had|underwent|undergo) (a|the) dict:'\(tst_terms\)'",1

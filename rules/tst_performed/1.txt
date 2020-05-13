@@ -1,0 +1,11 @@
+!No
+#Don't forget to save the file to preserve the new name.
+"(never|not) (had|performed|done|received) (a|the)? ?dict:'\(tst_terms\)'",1
+"not (recall ever|ever recall) having (a|the) dict:'\(tst_terms\)'",1
+"no recollection of ever having (a|the) dict:'\(tst_terms\)'",1
+"not believe s?he has ever had (a|the) dict:'\(tst_terms\)'",1
+"no known previous dict:'\(tst_terms\)'",1
+"no history of dict:'\(tst_terms\)'",1
+"never previously undergone (a|the) dict:'\(tst_terms\)'",1
+"dict:'\(tst_terms\)' status is unknown",1
+"dict:'\(tst_terms\)'",0

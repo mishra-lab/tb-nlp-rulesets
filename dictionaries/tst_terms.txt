@@ -1,0 +1,1 @@
+"TB skin test","tuberculin skin test","skin test","\bTST\b","Mantoux skin test","tuberculosis skin test"
