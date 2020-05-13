@@ -1,0 +1,7 @@
+!Yes
+#Don't forget to save the file to preserve the new name.
+"(positive|negative) dict:'\(igra_terms\)'",1
+"(undergo|underwent) (a|the)? ?dict:'\(igra_terms\)'",1
+"dict:'\(igra_terms\)' (was )?(done|performed) ?(on)?",1,"never","ib",0
+"(her|his|a) dict:'\(igra_terms\)' (was|is)",1
+"dict:'\(igra_terms\)'",0
