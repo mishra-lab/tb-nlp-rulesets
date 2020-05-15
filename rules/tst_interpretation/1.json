@@ -1,0 +1,56 @@
+{
+    "Name": "Negative",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{tst_terms}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "9tfkfd"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "qw919"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "\\bif\\b",
+                            "OR",
+                            "conver",
+                            "OR",
+                            "previous",
+                            "OR",
+                            "counsel",
+                            "OR",
+                            "advise",
+                            "OR",
+                            "explain",
+                            "OR",
+                            "{contacts}"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "tgzq1"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}
