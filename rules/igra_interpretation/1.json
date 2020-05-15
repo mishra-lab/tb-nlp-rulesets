@@ -1,0 +1,52 @@
+{
+    "Name": "Negative",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "{igra_terms}"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "6vpuzk"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "negative",
+                            "OR",
+                            "unlikely"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "6ptfxq"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "review",
+                            "OR",
+                            "consult",
+                            "OR",
+                            "discuss",
+                            "OR",
+                            "offer"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "05b97"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

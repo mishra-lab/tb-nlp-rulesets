@@ -1,1 +1,1 @@
-"\bIGRA test","QuantiFERON test","interferon gamma release assay","QuantiFERON TB Gold","\bIGRA\b","QuantiFERON Gold test"
+"\bIGRA test","QuantiFERON test","interferon gamma release assay","QuantiFERON TB Gold","\bIGRA\b","QuantiFERON Gold test","QuantiFERON"
