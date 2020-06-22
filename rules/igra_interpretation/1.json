@@ -36,7 +36,9 @@
                             "OR",
                             "discuss",
                             "OR",
-                            "offer"
+                            "offer",
+                            "OR",
+                            "helpful"
                         ],
                         "Score": 0,
                         "Modifier": "None",
