@@ -1,1 +1,1 @@
-"TB skin test","tuberculin skin test","skin test","\bTST\b","Mantoux test","Mantoux skin test","Manatoux skin test","tuberculosis skin test","2-step TB skin test","\bPPD skin test","TB test"
+"TB skin test","tuberculin skin test","skin test","\bTST\b","Mantoux test","Mantoux skin test","Manatoux skin test","tuberculosis skin test","2-step TB skin test","\bPPD skin test","\bTB test"

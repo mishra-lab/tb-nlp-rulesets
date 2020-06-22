@@ -40,7 +40,9 @@
                             "OR",
                             "explain",
                             "OR",
-                            "{contacts}"
+                            "{contacts}",
+                            "OR",
+                            "likely"
                         ],
                         "Score": 0,
                         "Modifier": "None",
