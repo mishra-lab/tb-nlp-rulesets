@@ -1,0 +1,6 @@
+{
+    "Classifier Type": "CaptureClassifier",
+    "Classifier Args": {
+        "negative_label": "Not recorded"
+    }
+}
