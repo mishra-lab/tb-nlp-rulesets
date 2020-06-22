@@ -1,1 +1,1 @@
-"sister","brother","sibling","cousin","\bson\b","daughter","mother","father","grandmother","grandfather","grandson","granddaughter","nephew","niece","\buncle\b","\baunt\b","family member","family"
+"sister","brother","sibling","cousin","\bson\b","daughter","mother","father","grandmother","grandfather","grandson","granddaughter","nephew","niece","\buncle\b","\baunt\b","family member","family","wife","husband","spouse"

@@ -1,8 +1,12 @@
 !Yes
 #Don't forget to save the file to preserve the new name.
-"(positive|negative) dict:'\(tst_terms\)'",1
-"(im)?planted (a|the) dict:'\(tst_terms\)'",1
-"(recently|believes s?he) had (a|the) dict:'\(tst_terms\)'",1
-"(s?he|did) (have|had|underwent|undergo) (a|the) dict:'\(tst_terms\)'",1
-"did (a|the) dict:'\(tst_terms\)'",1
-"dict:'\(tst_terms\)' (was )?planted",1
+"(positive|negative) dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0
+"(im)?planted (a|the) dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0
+"(recently|believes s?he) had (a|the) dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0
+"(s?he|did) (have|had|underwent|undergo) (a|the) dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0
+"did (a|the) dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0
+"dict:'\(tst_terms\)' (was )?planted",1,"dict:'\(contacts\)'",ib,0
+"(had a series|had several).* dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0
+"dict:'\(tst_terms\)' (was )?performed",1,"dict:'\(contacts\)'",ib,0,"(never|\bno\b|\bnot\b)",ib,0
+"(his|her) dict:'\(tst_terms\)'",1,"dict:'\(contacts\)'",ib,0,"(never|\bno\b|\bnot\b|unknown)",i,0
+"dict:'\(tst_terms\)'",0
