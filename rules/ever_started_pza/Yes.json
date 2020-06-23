@@ -1,0 +1,150 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "Pyrazinamide",
+                    "OR",
+                    "\\bPZA\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "63pxft"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "{treatment_terms}"
+                        ],
+                        "Score": 3,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "z3c9hd"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "counsel",
+                            "OR",
+                            "discuss",
+                            "OR",
+                            "assess",
+                            "OR",
+                            "candidate",
+                            "OR",
+                            "encourage",
+                            "OR",
+                            "offer",
+                            "OR",
+                            "consider"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "eat9o"
+                    },
+                    {
+                        "Rule": [
+                            "refuse",
+                            "OR",
+                            "decline",
+                            "OR",
+                            "no interest",
+                            "OR",
+                            "oppose"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "udze7u"
+                    },
+                    {
+                        "Rule": [
+                            "resistant",
+                            "OR",
+                            "intolerant",
+                            "OR",
+                            "substandard",
+                            "OR",
+                            "unsuit",
+                            "OR",
+                            "substitute"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "g1exi9"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "on Pyrazinamide",
+                    "OR",
+                    "on PZA\\b"
+                ],
+                "Score": 3,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "b8h0f"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "not on"
+                        ],
+                        "Score": 0,
+                        "Modifier": "b",
+                        "Selected": false,
+                        "type": "Ignore",
+                        "u_id": "a7yx2x"
+                    }
+                ],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "Pyrazinamide",
+                    "OR",
+                    "\\bPZA\\b"
+                ],
+                "Score": 0,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "99hzf8"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "mg"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "vmev8q"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}
