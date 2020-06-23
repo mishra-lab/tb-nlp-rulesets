@@ -2,9 +2,7 @@
     "Label Col": [
         24
     ],
-    "Pwds": [
-        "tst_terms"
-    ],
+    "Pwds": [],
     "Specify Function with Python": false,
     "Use Preprocessor": false
 }

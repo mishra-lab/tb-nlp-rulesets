@@ -1,10 +1,12 @@
 !Induration
 #Don't forget to save the file to preserve the new name.
 "([1-9][0-9]?)-? ?mm (?:of|in)? ?induration",10
+"([1-9][0-9]? ?x ?[1-9][0-9]?)-? ?mm (?:of|in)? ?induration",20
 "indurated with a.* ([1-9][0-9]?)-? ?mm",10
-"dict:'\(tst_terms\)' (?:of|in)? ?([1-9][0-9]?)-? ?mm",10
-"dict:'\(tst_terms\)'.*which was ([1-9][0-9]?)-? ?mm",10
-"grossly? ?(?:significant|positive) at ([1-9][0-9]?)-? ?mm",10
-####
-"dict:'\(tst_terms\)'",0
-"induration",0
+"indurated with a.* ([1-9][0-9]? ?x ?[1-9][0-9]?)-? ?mm",20
+"(?:Mantoux|skin) test (?:of|in|was)? ?([1-9][0-9]?)-? ?mm",10
+"(?:Mantoux|skin) test (?:of|in|was)? ?([1-9][0-9]? ?x ?[1-9][0-9]?)-? ?mm",20
+"(?:Mantoux|skin) test.*(?:which was|measuring|result of) ([1-9][0-9]?)-? ?mm",10
+"(?:Mantoux|skin) test.*(?:which was|measuring|result of) ([1-9][0-9]? ?x ?[1-9][0-9]?)-? ?mm",20
+"(?:grossly)? ?(?:significant|positive) at? ([1-9][0-9]?)-? ?mm",10
+"(?:grossly)? ?(?:significant|positive) at? ([1-9][0-9]? ?x ?[1-9][0-9]?)-? ?mm",20
