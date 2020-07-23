@@ -1,0 +1,22 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "scarring"
+                ],
+                "Score": 1,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "u2697m"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

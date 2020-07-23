@@ -1,0 +1,37 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "hilum",
+                    "OR",
+                    "hilar"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "ldm4e"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "prominent",
+                            "OR",
+                            "prominence"
+                        ],
+                        "Score": 1,
+                        "Modifier": "a",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "w9tab"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

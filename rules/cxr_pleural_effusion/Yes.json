@@ -1,0 +1,48 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "pleural"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "hkis3k"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "collection",
+                            "OR",
+                            "effusion"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "i9yjlm"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "\\bno\\b",
+                            "OR",
+                            "resolved"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "xkdpff"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

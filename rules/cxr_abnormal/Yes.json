@@ -1,0 +1,22 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "abnormal"
+                ],
+                "Score": 0,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "ypeekf"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "ground glass"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "07ffkc"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "opacit",
+                            "OR",
+                            "change"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "ajxraw"
+                    }
+                ],
+                "Ignore": [],
+                "Add": []
+            }
+        },
+        {
+            "Primary": {
+                "Rule": [
+                    "consolidat",
+                    "OR",
+                    "densit",
+                    "OR",
+                    "pneumonia",
+                    "OR",
+                    "infiltrate"
+                ],
+                "Score": 1,
+                "Selected": true,
+                "type": "Primary",
+                "u_id": "nf4b2e"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [],
+                "Add": []
+            }
+        }
+    ]
+}

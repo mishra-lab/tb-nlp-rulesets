@@ -1,0 +1,39 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "upper lobe"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "0pyhe"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "clear",
+                            "OR",
+                            "resolved",
+                            "OR",
+                            "not identifiable",
+                            "OR",
+                            "resolution"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "3ytjjh"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

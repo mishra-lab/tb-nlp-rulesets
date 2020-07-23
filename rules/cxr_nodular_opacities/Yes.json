@@ -1,0 +1,52 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "\\bnodular\\b"
+                ],
+                "Score": 0,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "hitpbf"
+            },
+            "Secondary": {
+                "Replace": [
+                    {
+                        "Rule": [
+                            "changes",
+                            "OR",
+                            "opacit",
+                            "OR",
+                            "densit"
+                        ],
+                        "Score": 1,
+                        "Modifier": "None",
+                        "Selected": false,
+                        "type": "Replace",
+                        "u_id": "5hjeeh"
+                    }
+                ],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "not identifiable",
+                            "OR",
+                            "stable",
+                            "OR",
+                            "less defined"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "you80k"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}

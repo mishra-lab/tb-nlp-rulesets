@@ -1,0 +1,37 @@
+{
+    "Name": "Yes",
+    "Dirty": false,
+    "Rules": [
+        {
+            "Primary": {
+                "Rule": [
+                    "cavitary"
+                ],
+                "Score": 1,
+                "Selected": false,
+                "type": "Primary",
+                "u_id": "3aqyie"
+            },
+            "Secondary": {
+                "Replace": [],
+                "Ignore": [
+                    {
+                        "Rule": [
+                            "has resolved",
+                            "OR",
+                            "no cavitary lesion",
+                            "OR",
+                            "no evidence"
+                        ],
+                        "Score": 0,
+                        "Modifier": "None",
+                        "Selected": true,
+                        "type": "Ignore",
+                        "u_id": "wp3zhp"
+                    }
+                ],
+                "Add": []
+            }
+        }
+    ]
+}
